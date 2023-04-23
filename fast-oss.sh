@@ -19,7 +19,7 @@ export KERNEL_ZIP="$VARIANT-$HASH"
 export LOCALVERSION="~'$VARIANT-$HASH'"
 export KBUILD_COMPILER_STRING=$($CLANG_PATH --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 make O=out CC=clang LLVM=1 LLVM_IAS=1 vendor/kona-perf_defconfig
-make O=out CC=clang AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LLVM=1 LLVM_IAS=1 -j32 CROSS_COMPILE=/mnt/Bathtube/toolchains/gcc-linaro-12.2.1-2023.03-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu- CROSS_COMPILE_ARM32=/mnt/Bathtube/toolchains/gcc-linaro-12.2.1-2023.03-aarch64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+make O=out CC=clang AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LLVM=1 LLVM_IAS=1 -j32 CROSS_COMPILE=/mnt/Bathtube/toolchains/gcc-linaro-12.2.1-2023.04-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu- CROSS_COMPILE_ARM32=/mnt/Bathtube/toolchains/gcc-linaro-12.2.1-2023.04-aarch64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 cp -v $KBUILD_OUTPUT/arch/arm64/boot/Image.gz $ZIP_DIR/Image.gz
 cp -v $KBUILD_OUTPUT/arch/arm64/boot/dtbo.img $ZIP_DIR/dtbo.img
 cd $ZIP_DIR
