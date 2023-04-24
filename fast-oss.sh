@@ -13,7 +13,7 @@ export PATH="/mnt/Bathtube/toolchains/neutron-clang/bin:$PATH"
 export USE_CCACHE=1
 export CLANG_PATH="/mnt/Bathtube/toolchains/neutron-clang/bin/clang"
 export ARCH=arm64
-export VARIANT="aurora-hell-r07"
+export VARIANT="aurora-hell-r08"
 export HASH=`git rev-parse --short=6 HEAD`
 export KERNEL_ZIP="$VARIANT-$HASH"
 export LOCALVERSION="~'$VARIANT-$HASH'"
