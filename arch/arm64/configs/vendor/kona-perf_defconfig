@@ -4,7 +4,7 @@
 #
 
 #
-# Compiler: Proton clang version 13.0.0 (https://github.com/llvm/llvm-project b4fd512c36ca344a3ff69350219e8b0a67e9472a)
+# Compiler: Neutron clang version 17.0.0 (https://github.com/llvm/llvm-project.git 9aae408d551083bbbac96ecc512d45c30358e4b9)
 #
 CONFIG_OPLUS_SYSTEM_KERNEL_QCOM=y
 # CONFIG_OPLUS_SYSTEM_KERNEL_MTK is not set
@@ -21,7 +21,7 @@ CONFIG_OPLUS_PAGEOWNER_TEST=""
 CONFIG_GCC_VERSION=0
 CONFIG_CC_IS_CLANG=y
 CONFIG_LD_IS_LLD=y
-CONFIG_CLANG_VERSION=130000
+CONFIG_CLANG_VERSION=170000
 CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_TOOLS_SUPPORT_RELR=y
 CONFIG_IRQ_WORK=y
